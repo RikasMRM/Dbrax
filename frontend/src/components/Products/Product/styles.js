@@ -4,6 +4,7 @@ export default makeStyles(() => ({
     root: {
         maxWidth: 345,
         //maxWidth: '50%',
+        
     },
     media: {
         height: 300,
@@ -29,5 +30,12 @@ export default makeStyles(() => ({
     txt: {
         fontWeight: 500,
         textAlign: 'left',
+    },
+    txtV: {
+        fontWeight: 500,
+        textAlign: 'right',
+    },
+    button: {
+        marginLeft: '10px',
     },
 }));

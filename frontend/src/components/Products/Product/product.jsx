@@ -16,20 +16,17 @@ const Product = ({ product, onAddToCart }) => {
 
         return(
         
-    <div>
-        <Card className={classes.root}>
-
-        <CardMedia className={classes.media} image={image} />
-            {/* <div className="">
-                <div className={classes.media}>
-                        <img src={image} alt={title} />
-                </div> */}
+            <div>
+                <Card className={classes.root} key={id}>
+                <Link to={`/product/${id}`}>
+                <CardMedia className={classes.media} image={image} />
+                </Link>
 
                 <CardContent>
                 <div className={classes.cardContent}>
                 <div>
                     <Typography className={classes.txt} variant="h6" gutterBottom>
-                                {title}
+                        {title}
                     </Typography>
                     <Typography variant="h6" className={classes.price}>
                         LKR {price}
@@ -39,12 +36,12 @@ const Product = ({ product, onAddToCart }) => {
                     </Typography>
                 </div>
                 </div>
-                </CardContent>
+                </CardContent>      
+                </Card>
 
-        </Card>
-    </div>
+            </div>
     
-    );
+            );
 
     });
 
