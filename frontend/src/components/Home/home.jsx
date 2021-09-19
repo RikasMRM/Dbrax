@@ -11,6 +11,7 @@ import { setProducts } from '../../redux/actions/productActions';
 
 import axios from 'axios';
 
+
 const Home = ({ products }) => {
     const classes = useStyles();
     
@@ -36,6 +37,7 @@ const Home = ({ products }) => {
             <div className={classes.toolbar} />
             <Carousel />
             <div> 
+                <h1>All Items</h1>
                 <Product />
             </div>         
             <Footer />

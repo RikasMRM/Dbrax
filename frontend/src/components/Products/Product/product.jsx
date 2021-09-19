@@ -5,6 +5,8 @@ import { Card, CardMedia, CardContent, CardActions, Typography, IconButton, Icon
 import { Link } from "react-router-dom";
 import useStyles from "./styles";
 
+//import logo from '../../assets/DbraxBlack.png';
+
 const Products = ({ image, productName }) => {
   const classes = useStyles();
 

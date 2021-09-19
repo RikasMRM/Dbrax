@@ -23,6 +23,7 @@ export default makeStyles(() => ({
     price: {
         color: '#000000',
         fontWeight: 700,
+        textTransform: "uppercase",
     },
     name: {
         fontWeight: 500,
