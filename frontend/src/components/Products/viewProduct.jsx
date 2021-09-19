@@ -16,21 +16,21 @@ function ViewProduct() {
   return (
     <div>
       <Card className={classes.root} key={""}>
-      <Typography >
+      <Typography className={classes.price}>
           {products[productID-1].title}
         </Typography>
 
         <img className={classes.media} src={products[productID-1].image}></img>
 
-        <Typography className={classes.price}>
-          {products[productID-1].price}
+        <Typography variant="h6" className={classes.price}>
+          LKR {products[productID-1].price}
         </Typography>
 
-        <Typography className={classes.txt} >
+        <Typography variant="button" className={classes.txt} >
           {products[productID-1].category}
         </Typography>
 
-        <Typography className={classes.txt}>
+        <Typography variant="overline" className={classes.txt}>
           {products[productID-1].description}
         </Typography>
 
