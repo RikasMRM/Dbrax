@@ -24,7 +24,6 @@ export default makeStyles((theme) => ({
     },
     button: {
         marginLeft: '10px',
-
     },
     menuButton: {
         marginRight: theme.spacing(2),
@@ -83,5 +82,13 @@ export default makeStyles((theme) => ({
             justifyContent: 'center',
         },
     },
-
+    logout: {
+        marginLeft: '20px',
+    },
+    userName: {
+        display: 'flex',
+        alignItems: 'center',
+        textAlign: 'center',
+        fontSize: '12pt',
+    },
 }));

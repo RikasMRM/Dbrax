@@ -26,7 +26,7 @@ const Navbar = ({ totalItems }) => {
                     />
                     <div className={classes.grow} />
                     <div className={classes.button}>
-                        <IconButton component={Link} to="/cart" aria-label="Show cart items" color="primary">
+                        <IconButton component={Link} to="/cart" aria-label="Show cart items" color="secondary" >
                             <Badge badgeContent={totalItems} color="secondary">
                                 <ShoppingCart />
                             </Badge>
